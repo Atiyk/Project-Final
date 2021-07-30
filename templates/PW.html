@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Password Generator</title>
+        <link rel="stylesheet" href="/static/css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body>
+    <div class="bg-dark  text-white">
+        <h1>Hello {{username}}</h1>
+        <p>Welcome to the password manager site! You can generate and save encrypted passwords under 75 characters here.</p>
+            <form method='POST' action = '/password'>  
+                <div class = "row">
+                    <!-- <div class="text-primary"> -->
+                    <input type="text" name= "username" placeholder="What is your account username? "/> 
+                    <!-- </div>     -->
+                </div>      
+                <div class="row">
+                <input type="text" name="password" placeholder="Enter your account password">
+                </div>
+                <div class = "row">
+                <input type="text" name="password_length" placeholder="Enter the length of your passwords "/>
+                </div>
+                <div class = "row">
+                <input type="text" name="choice" placeholder="Do you want the password to be encrypted?  If yes, press 1, if no press 2.  Enter your choice here:"/>
+                </div>
+                <div class = "row">   
+                <input class = "btn btn-dark" type="submit" value="Submit"/>
+                </div>           
+        </form>
+        </div>
+    </div>
+    </body>
+</html>

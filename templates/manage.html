@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Password Generator Results</title>
+        <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- <h3>Your password length is {{ password_length }}</h3>
+        <h3>You choose {{choice}}</h3>
+        <h3> {{new_password}} </h3>
+        <h3>username = {{username}} </h3> -->
+        <!-- <div class="card text-white bg-dark" style="max-width: 18rem;">
+        <div class="card-header bg-dark">Password information</div>
+        <div class="card-body card-primary">
+            <p class="card-text"> Your password length is {{password_length}}.</p>
+            <p class="card text"> You choose {{choice}}</p>
+            <p class="card text ">  {{new_password}}</p>
+        </div>
+        </div> -->
+<form method='POST' action = '/password/encrypt'> 
+<div class = card-center>
+<div class="card border-danger card text-white bg-dark card text-center mb-3" style="max-width: 20rem;">
+    <img src="https://www.smallbusinesscomputing.com/wp-content/uploads/2021/06/Password-Sec_595.jpg" class="card-img-top" style="width: 20rem;" alt="Picture">
+    <div class="card-header">Password Generation Results: </div>
+    <div class="card-title">Welcome {{username}}! </div>    
+    <div class="card-body">Your password length is {{password_length}}. </div>
+    <div class="card-body">You choose {{choice}} </div>
+    <div class="card-body">{{new_password}} </div>
+    <a href="https://5000-229de64c-0bac-4a9d-a550-fc7b105118fb.cs-us-east1-pkhd.cloudshell.dev/?authuser=1" class="btn btn-dark text-white">Press this to generate more passwords</a>
+    <!-- <input type="submit" class="btn btn-dark text-white">If you choose to encrypt your password, click here to decrypt it</a> -->
+  </div>
+</div>
+</form>
+<!-- <div class = card-center>
+<div class="card border-danger card text-white bg-dark card text-center mb-3" style="max-width: 20rem;">
+    <img src="https://www.smallbusinesscomputing.com/wp-content/uploads/2021/06/Password-Sec_595.jpg" class="card-img-top" style="width: 20rem;" alt="Picture">
+    <div class="card-header">Generated Passsword Results: </div>
+    <div class="card-title">Welcome {{username}}! </div>    
+    <div class="card-body">Your password length is {{password_length}}. </div>
+    <div class="card-body">You choose {{choice}} </div>
+    <div class="card-body">{{new_password}} </div>
+    <a href="https://5000-229de64c-0bac-4a9d-a550-fc7b105118fb.cs-us-east1-pkhd.cloudshell.dev/?authuser=1" class="btn btn-dark text-white">Press this to generate more passwords</a>
+    <a href="https://5000-229de64c-0bac-4a9d-a550-fc7b105118fb.cs-us-east1-pkhd.cloudshell.dev/encrypt.html"class="btn btn-dark text-white">Click here to decrypt your encrypted password.</a>
+  </div>
+</div> -->
+<!-- <div class="card border-danger card text-white bg-dark card text-center mb-3" style="max-width: 20rem;">
+    <img src="https://www.smallbusinesscomputing.com/wp-content/uploads/2021/06/Password-Sec_595.jpg" class="card-img-top" style="width: 20rem;" alt="Picture">
+    <div class="card-header">Generated Passsword Results: </div>
+    <div class="card-body">Your password length is {{password_length}}. </div>
+    <div class="card-body">You choose {{choice}} </div>
+    <div class="card-body">{{new_password}} </div>
+    <a href="https://5000-229de64c-0bac-4a9d-a550-fc7b105118fb.cs-us-east1-pkhd.cloudshell.dev/?authuser=1" class="btn btn-dark text-white">Press this to generate more passwords</a>
+  </div> -->
+</body>
+</html>

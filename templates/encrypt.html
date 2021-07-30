@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Decrypt encrypted</title>
+        <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+    <form method='POST' action = '/password/encrypt'></form>
+        <div class = card-center>
+        <div class="card border-danger card text-white bg-dark card text-center mb-3" style="max-width: 20rem;">
+        <img src="https://www.smallbusinesscomputing.com/wp-content/uploads/2021/06/Password-Sec_595.jpg" class="card-img-top" style="width: 20rem;" alt="Picture">
+        <div class="card-header">Encrypted Passsword Results: </div>
+        <div class="card-title">Welcome {{username}}! </div>    
+        <div class="card-body">Your password length is {{password_length}}. </div>
+        <div class="card-body">Your encrypted password is {{new_password}} </div>
+        </div>
+        </div>
+</body>
+</html>
